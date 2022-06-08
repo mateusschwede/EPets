@@ -1,0 +1,10 @@
+<h1>EPet</h1>
+<h4>Sistema de adoção de Pets</h4>
+
+<a href="{% url 'add' %}">Adicionar Pet</a>
+
+<h3>Lista de Pets:</h3>
+{% for pet in pets %}
+<p>{{pet.id}}</p>
+<a href="{% url 'detail' pet.id %}">Ver</a>
+{% endfor %}

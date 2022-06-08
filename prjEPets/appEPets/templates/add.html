@@ -1,0 +1,7 @@
+<h3>Novo Pet</h3>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button onclick="window.location.href='{% url 'list' %}'">Voltar</button>
+    <input type="submit" value="Adicionar">
+</form>
