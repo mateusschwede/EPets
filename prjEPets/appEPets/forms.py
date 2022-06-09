@@ -6,3 +6,8 @@ class FormPet(forms.ModelForm):
     class Meta:
         model = Pet
         fields = '__all__'
+
+class FormAdotPet(forms.ModelForm):
+    class Meta:
+        model = Pet
+        fields = ['adotado']

@@ -16,7 +16,7 @@ class Pet(models.Model):
     id = models.BigAutoField(primary_key=True)
     nome = models.CharField(max_length=100)
     tipo = models.CharField(max_length=4,choices=TIPO_PET)
-    idade = models.DateField(auto_now_add=False)
+    nascimento = models.DateField(auto_now_add=False)
     vacinado = models.BooleanField(default=False,choices=VACINADO)
     adotado = models.BooleanField(default=False,choices=ADOTADO)
     
